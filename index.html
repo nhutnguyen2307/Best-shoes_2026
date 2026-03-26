@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Shoes</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body { font-family: 'Inter', sans-serif; }
+
+/* LAYOUT */
+html, body { height: 100%; }
+.wrapper { min-height: 100vh; display: flex; flex-direction: column; }
+.content { flex: 1; }
+
+/* LOGO */
+.logo-hover {
+    transition: 0.3s;
+}
+.logo-hover:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+/* MENU */
+.menu-item {
+    font-style: italic;
+    color: #6b7280;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+.menu-item:hover {
+    color: black;
+    transform: translateY(-2px);
+}
+
+/* BUTTON */
+.btn-hover {
+    transition: 0.3s;
+}
+.btn-hover:hover {
+    transform: scale(1.1);
+    background: red;
+}
+
+/* CARD */
+.card {
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+.card img {
+    transition: 0.4s;
+}
+.card:hover img {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+/* PRODUCT BOX (NEW) */
+.product-box {
+    background: linear-gradient(to bottom, #e5e5e5, #cfcfcf);
+    border-radius: 12px;
+    padding: 8px 0;
+    margin-top: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    font-weight: 700;
+    font-style: italic;
+}
+.product-price {
+    font-weight: 800;
+}
+
+/* FOOTER */
+.footer-hover {
+    transition: 0.3s;
+}
+.footer-hover:hover {
+    transform: translateX(5px);
+    color: #000;
+}
+.footer-icon {
+    transition: 0.3s;
+}
+.footer-icon:hover {
+    transform: scale(1.2);
+    color: black;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .grid-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+</style>
+</head>
+
+<body class="bg-gray-100">
+
+<div class="wrapper">
+<div class="content">
+
+<!-- NAV -->
+<nav class="flex justify-center items-center gap-16 py-6 bg-[#e5e5e5] shadow-sm">
+<a class="italic text-xl font-bold logo-hover">LOGO</a>
+<a href="#" class="menu-item">Home</a>
+<a href="#" class="menu-item">Men</a>
+<a href="#" class="menu-item">Woman</a>
+<a href="#" class="menu-item">Sale</a>
+<a href="#" class="menu-item">Contact</a>
+<a href="#" class="menu-item">Cart</a>
+</nav>
+
+<!-- HERO -->
+<div class="container mx-auto px-20 py-20 flex justify-between items-center">
+<div>
+<p class="text-gray-400 font-bold text-sm">NEW COLLECTION 2026</p>
+
+<h1 class="text-6xl font-black">
+BEST RUNNING 2026 SHOES
+</h1>
+
+<p class="italic text-xl mt-2">TOP TRENDING</p>
+
+<button class="mt-6 bg-black text-white px-6 py-3 font-bold rounded-lg btn-hover">
+SHOPPING NOW!!!
+</button>
+</div>
+
+<img src="images/shoes_clean.png" class="w-1/3">
+</div>
+
+<!-- TITLE -->
+<h2 class="text-center text-4xl font-black mb-10">
+BEST-CHOICE SHOES
+</h2>
+
+<!-- PRODUCTS -->
+<div class="grid grid-cols-5 gap-6 px-20 grid-products">
+
+<a href="product.html" class="bg-white p-5 rounded-xl shadow text-center card">
+<img src="images/NAir.png" class="mx-auto w-40 object-contain">
+<div class="product-box">
+    <p class="product-name">Nike Air Force 1</p>
+    <p class="product-price">155$</p>
+</div>
+</a>
+
+<a href="product.html" class="bg-white p-5 rounded-xl shadow text-center card">
+<img src="images/Adidas.png" class="mx-auto w-40 object-contain">
+<div class="product-box">
+    <p class="product-name">Adidas Grand Court basic</p>
+    <p class="product-price">145$</p>
+</div>
+</a>
+
+<a href="product.html" class="bg-white p-5 rounded-xl shadow text-center card">
+<img src="images/Balance.png" class="mx-auto w-40 object-contain">
+<div class="product-box">
+    <p class="product-name">New Balance 550 Logo N</p>
+    <p class="product-price">160$</p>
+</div>
+</a>
+
+<a href="product.html" class="bg-white p-5 rounded-xl shadow text-center card">
+<img src="images/Nike.png" class="mx-auto w-40 object-contain">
+<div class="product-box">
+    <p class="product-name">Nike Dunk Low black - white</p>
+    <p class="product-price">150$</p>
+</div>
+</a>
+
+<a href="product.html" class="bg-white p-5 rounded-xl shadow text-center card">
+<img src="images/Pauma.png" class="mx-auto w-40 object-contain">
+<div class="product-box">
+    <p class="product-name">Pauma black and white</p>
+    <p class="product-price">140$</p>
+</div>
+</a>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-[#7c7f87] text-white py-10 px-20 mt-20">
+
+<div class="grid md:grid-cols-3 gap-10 text-base font-semibold">
+
+<div>
+<h3 class="font-black mb-3 uppercase">Sản phẩm</h3>
+<ul class="space-y-1">
+<li class="footer-hover">• Men</li>
+<li class="footer-hover">• Women</li>
+</ul>
+
+<h3 class="font-black mt-5 mb-2">Kết nối với chúng tôi</h3>
+<div class="flex gap-4 text-lg mt-2">
+<i class="fab fa-facebook footer-icon"></i>
+<i class="fab fa-instagram footer-icon"></i>
+<i class="fab fa-tiktok footer-icon"></i>
+<i class="fab fa-youtube footer-icon"></i>
+</div>
+</div>
+
+<div>
+<h3 class="font-black mb-3 uppercase">Chính sách</h3>
+<ul class="space-y-1">
+<li class="footer-hover">• Chính sách đổi trả</li>
+<li class="footer-hover">• Chính sách bảo hành</li>
+<li class="footer-hover">• Chính sách vận chuyển</li>
+<li class="footer-hover">• Điều khoản sử dụng</li>
+</ul>
+</div>
+
+<div class="text-right">
+<h3 class="font-black mb-3 uppercase">Best Shoes Store 2026</h3>
+<ul class="space-y-1">
+<li class="footer-hover">• Email: nguyenhoangnhutnguyen.98cb@gmail.com</li>
+<li class="footer-hover">• Hotline: 0932967328</li>
+</ul>
+</div>
+
+</div>
+
+<div class="mt-6 border-t border-gray-300 pt-4 text-right font-bold text-base">
+© 2026 Best Shoes Store
+</div>
+
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,321 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at 20% 30%, #f9fafb 0%, transparent 40%),
+                radial-gradient(circle at 80% 20%, #e0e7ff 0%, transparent 40%),
+                radial-gradient(circle at 50% 80%, #e5e7eb 0%, transparent 50%),
+                linear-gradient(to bottom, #f3f4f6, #e5e7eb);
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    background: #ddd;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.hero-text p {
+    color: #777;
+    letter-spacing: 1px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.hero-text h3 {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    transform: scale(1.05);
+}
+
+/* PRODUCTS */
+.products {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.products h2 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.product-list {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+/* ===== CARD CHUẨN ===== */
+.card {
+    width: 200px;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ẢNH ĐỀU */
+.card img {
+    width: 100%;
+    height: 140px; /* 🔥 tăng chiều cao */
+    object-fit: cover; /* 🔥 QUAN TRỌNG */
+    border-radius: 10px;
+}
+
+/* ===== BOX TÊN + GIÁ ===== */
+/* ===== FIX ĐỀU SẢN PHẨM ===== */
+
+/* BOX */
+.product-box {
+    background: linear-gradient(to bottom, #e5e5e5, #cfcfcf);
+    border-radius: 12px;
+    margin-top: 12px;
+
+    height: 75px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* TÊN */
+.product-name {
+    font-weight: 700;
+    font-style: italic;
+
+    height: 40px; /* 🔥 CHÌA KHÓA */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* GIÁ */
+.product-price {
+    font-weight: 900;
+}
+
+/* ===== PRODUCT PAGE ===== */
+.product-detail {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.left {
+    flex: 1;
+}
+
+.main-img {
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.thumbs {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.thumb-active {
+    border: 2px solid black;
+}
+
+.thumbs img {
+    width: 70px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.right {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.stock {
+    color: red;
+    border: 1px solid red;
+    display: inline-block;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+}
+
+.price .new {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.price .old {
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+/* SIZE */
+.sizes span {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sizes span.active {
+    border-color: red;
+    background: #ffecec;
+}
+
+
+/* BUTTON */
+.actions {
+    margin-top: 20px;
+}
+
+.cart {
+    background: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+}
+
+.buy {
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: #dcdcdc;
+    margin-top: 60px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+}
+.size-btn {
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.size-btn.active {
+    border-color: red;
+    background: #fff;
+}
+.size-btn:hover {
+    border-color: red;
+}
+.voucher {
+    display: flex;
+    border: 2px solid #ff3b30;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.voucher:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.voucher-left {
+    width: 70px;
+    font-size: 22px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #111;
+}
+
+.voucher-right {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 13px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.copy-btn {
+    align-self: flex-end;
+    background: black;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+}
